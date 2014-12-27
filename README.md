@@ -1,4 +1,4 @@
-# stack [![GoDoc](https://godoc.org/github.com/nmerouze/stack?status.png)](https://godoc.org/github.com/nmerouze/stack) [![Build Status](https://travis-ci.org/nmerouze/stack.svg?branch=master)](https://travis-ci.org/nmerouze/stack)
+# stack [![GoDoc](https://godoc.org/github.com/nmerouze/stack?status.png)](https://godoc.org/github.com/nmerouze/stack/jsonapi) [![Build Status](https://travis-ci.org/nmerouze/stack.svg?branch=master)](https://travis-ci.org/nmerouze/stack)
 
 
 stack is a framework to build [JSON-APIs](http://jsonapi.org) faster. It is based on the series of articles ["Build Your Own Web Framework in Go"](http://nicolasmerouze.com/build-web-framework-golang/) I began to write a few weeks ago.
