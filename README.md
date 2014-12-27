@@ -10,6 +10,13 @@ I am also developing new ideas that could become new features in the [experiment
 # Getting started
 
 ``` go
+package main
+
+import (
+  "net/http"
+  "github.com/nmerouze/stack/jsonapi"
+)
+
 type Tea struct {
   Name string `json:"name"`
 }
