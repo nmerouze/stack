@@ -29,7 +29,7 @@ type TeaResource struct {
   Data Tea `json:"data"`  
 }
 
-func teaHandler(w http.ResponseWriter, r *http.Request) {
+func teasHandler(w http.ResponseWriter, r *http.Request) {
   res := getTeas() // Returns a *TeaCollection
   jsonapi.Write(w, res)  
 }
