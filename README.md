@@ -4,7 +4,7 @@ stack is a framework to build [JSON-APIs](http://jsonapi.org) faster. It is base
 
 The public API of the package is stable and you can use it right now to make your application. I don't indend to break any existing feature but will add new features to make the framework more useful for production. [Look at the documentation](http://godoc.org/github.com/nmerouze/stack/jsonapi).
 
-Checkout the ["unstable features" section](#unstable-features) below to read about upcoming/work-in-progress features.
+Checkout the ["Unstable Features" section](#unstable-features) below to read about upcoming/work-in-progress features.
 
 # Getting started
 
@@ -51,8 +51,12 @@ func main() {
 }
 ```
 
-# Unstable features
+# Unstable Features
 
 ## `schema` package
 
 You can find this package on the [`schema` branch](https://github.com/nmerouze/stack/tree/schema). It aims at validating URL params and JSON request bodies. It also generates a JSON schema from the schema definition which can serve as a documentation, or to auto-build client libraries.
+
+## `data` package
+
+You can find this package on the [`data` branch](https://github.com/nmerouze/stack/tree/data). It aims at providing interfaces to connect the data layer of an application to the router. This way you can just write your models following these interfaces and the router will take care of the rest. No `http.Handler` to write. As you see in the current ["Getting Started" section](#getting-started), you need to manually make a handler to call your data layer then write the response. This code is always the same and will not be necessary once this package becomes stable.
